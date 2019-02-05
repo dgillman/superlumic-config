@@ -42,7 +42,8 @@
 #        - visual-studio-code
 #        - font-fira-code
     - name: install global python libraries
-      pip3:
+      pip:
+        executable: pip3
         name:
           - virtualenv
     - name: create ssh directory
