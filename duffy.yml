@@ -40,6 +40,10 @@
 #        - jaxx
 #        - visual-studio-code
 #        - font-fira-code
+    - name: install global python libraries
+      pip:
+        name:
+          - virtualenv
     - name: create ssh directory
       become: yes
       file:
