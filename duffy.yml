@@ -18,10 +18,10 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - docker
-        - intellij-idea
+        - intellij-idea-ce
         - google-chrome
         - google-drive-file-stream
-        - pycharm
+        - pycharm-ce
 # original to superlumic-config - allows preventing screen sleep
         - keepingyouawake
         - skype
