@@ -17,6 +17,7 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        - chefdk
         - docker
         - intellij-idea-ce
         - google-chrome
@@ -101,7 +102,7 @@
       - domain: 'com.apple.dock'
         key: 'orientation'
         type: string
-        value: left
+        value: bottom
       - domain: 'NSGlobalDomain'
         key: 'NSTableViewDefaultSizeMode'
         type: integer
@@ -149,7 +150,7 @@
       - domain: 'com.apple.dock'
         key: 'autohide-delay'
         type: int
-        value: 0
+        value: 5
       - domain: 'NSGlobalDomain'
         key: 'NSQuitAlwaysKeepsWindows'
         type: boolean
