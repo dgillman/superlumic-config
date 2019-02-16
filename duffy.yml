@@ -11,7 +11,7 @@
       with_items:
         - awscli
         - go
-	- postgresql
+        - postgresql
         - python
         - terraform
         - tmux       
