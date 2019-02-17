@@ -12,6 +12,8 @@
         - awscli
         - go
         - libmagic
+        - kubernetes-cli
+        - kubernetes-sigs/aws-iam-authenticator
         - postgresql
         - python
         - terraform
