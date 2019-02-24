@@ -20,6 +20,7 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        - adobe-acrobat-reader
         - chef/chef/chefdk
         - docker
         - intellij-idea-ce
