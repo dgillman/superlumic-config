@@ -10,16 +10,7 @@
         - wata727/tflint
     - name: install home brew applications
       homebrew:
-      name:
-        - awscli
-        - go
-        - libmagic
-        - kubernetes-cli
-        - postgresql
-        - python
-        - terraform
-        - tflint
-        - tmux
+      name: ['awscli', 'go', 'libmagic', 'kubernetes-cli', 'postgresql', 'python', 'terraform', 'tflint', 'tmux']
       state: latest
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
