@@ -5,11 +5,12 @@
 
   tasks:
     - homebrew_tap: name={{item}}
+        with_items:
+          - caskroom/fonts
+          - wata727/tflint
+    - name: install home brew applications
+      homebrew: name={{item}} state=latest
       with_items:
-        - caskroom/fonts
-        - wata727/tflint
-    - homebrew:
-      name:
         - awscli
         - go
         - libmagic
@@ -17,9 +18,9 @@
         - postgresql
         - python
         - terraform
+        - tfenv
         - tflint
-        - tmux
-      state: latest
+        - tmux       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
