@@ -17,7 +17,6 @@
         - kubernetes-cli
         - postgresql
         - python
-        - terraform
         - tfenv
         - tflint
         - tmux       
