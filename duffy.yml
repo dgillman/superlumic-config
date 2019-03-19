@@ -9,8 +9,8 @@
         - caskroom/fonts
         - wata727/tflint
     - name: install home brew applications
-      homebrew: name={{item}} state=latest
-      with_items:
+      homebrew:
+      name:
         - awscli
         - go
         - libmagic
@@ -19,7 +19,8 @@
         - python
         - terraform
         - tflint
-        - tmux       
+        - tmux
+      state: latest
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
