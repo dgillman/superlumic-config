@@ -5,7 +5,6 @@
 
   tasks:
     - homebrew_tap:
-        name: "{{item}}"
         with_items:
           - caskroom/fonts
           - wata727/tflint
