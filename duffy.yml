@@ -4,10 +4,10 @@
   connection: local
 
   tasks:
-    - homebrew_tap:
-        with_items:
-          - caskroom/fonts
-          - wata727/tflint
+    - homebrew_tap: name={{item}}
+      with_items:
+        - caskroom/fonts
+        - wata727/tflint
     - name: install home brew applications
       homebrew: name={{item}} state=latest
       with_items:
