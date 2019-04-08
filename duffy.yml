@@ -53,7 +53,7 @@
       become: yes
       copy:
         src: files/tmux.conf
-        dest: /Users/dgillman/tmux.conf
+        dest: /Users/duffy/tmux.conf
     - name: install global python libraries
       pip:
         executable: pip3
