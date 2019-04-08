@@ -49,6 +49,11 @@
 #        - jaxx
 #        - visual-studio-code
 #        - font-fira-code
+    - name: personal tmux config
+      become: yes
+      copy:
+        src: files/tmux.conf
+        dest: /Users/dgillman/tmux.conf
     - name: install global python libraries
       pip:
         executable: pip3
@@ -129,7 +134,7 @@
       - domain: 'com.apple.menuextra.clock'
         key: 'DateFormat'
         type: string
-        value: EEE MMM d  HH:mm
+        value: EEE MMM d  hh:mm:ss a
       - domain: 'com.apple.menuextra.battery'
         key: 'ShowPercent'
         type: string
